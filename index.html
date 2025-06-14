@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Cakes - Homemade Delights</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="logo">
+                <div class="logo">
+                   <img src="Images/SP-Cakes.jpg" alt="SP Cakes Logo">
+                </div>
+            </div>
+            <h1>SP CAKES</h1>
+            <p>Homemade Perfection</p>
+            <a href="#videos" class="cta-button">Explore Our Story</a>
+        </div>
+    </section>
+
+    <section class="video-section" id="videos">
+        <div class="container">
+            <h2 class="section-title">Our Baking Journey</h2>
+            <p class="section-subtitle">Watch how we create magic in our kitchen</p>
+            
+            <div class="video-carousel-container">
+                <div class="video-carousel" id="videoCarousel">
+                    <div class="video-slide">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="video-title">The Art of Cake Making</h3>
+                        <p class="video-description">Discover the passion and precision that goes into every SP Cake. From selecting the finest ingredients to the final decorative touch.</p>
+                    </div>
+                    
+                    <div class="video-slide">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="video-title">Behind the Scenes</h3>
+                        <p class="video-description">Take a peek into our kitchen where skilled bakers work their magic, creating delicious masterpieces daily.</p>
+                    </div>
+                    
+                    <div class="video-slide">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/BQ0mxQXmLsk?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="video-title">Customer Stories</h3>
+                        <p class="video-description">Hear from our happy customers about their favorite SP Cakes and the memories we've helped create.</p>
+                    </div>
+                </div>
+                
+                <button class="carousel-nav prev" onclick="prevVideoSlide()">‹</button>
+                <button class="carousel-nav next" onclick="nextVideoSlide()">›</button>
+            </div>
+            
+            <div class="carousel-indicators">
+                <div class="indicator active" onclick="goToVideoSlide(0)"></div>
+                <div class="indicator" onclick="goToVideoSlide(1)"></div>
+                <div class="indicator" onclick="goToVideoSlide(2)"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Signature Collection</h2>
+            <p class="section-subtitle">Handcrafted with love, baked to perfection</p>
+            
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/1.jpg')"></div>
+                            <div class="cake-name">Chocolate Fantasy</div>
+                            <div class="cake-description">Rich Belgian chocolate cake with velvety ganache and fresh berries</div>
+                            <div class="cake-price">₹899</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/2.jpg')"></div>
+                            <div class="cake-name">Strawberry Delight</div>
+                            <div class="cake-description">Light sponge cake with fresh strawberries and whipped cream</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/3.jpg')"></div>
+                            <div class="cake-name">Vanilla Dream</div>
+                            <div class="cake-description">Classic vanilla cake with buttercream frosting and edible flowers</div>
+                            <div class="cake-price">₹699</div>
+                        </a>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/4.jpg')"></div>
+                            <div class="cake-name">Red Velvet Royal</div>
+                            <div class="cake-description">Luxurious red velvet with cream cheese frosting and gold accents</div>
+                            <div class="cake-price">₹999</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/5.jpg')"></div>
+                            <div class="cake-name">Lemon Bliss</div>
+                            <div class="cake-description">Zesty lemon cake with citrus glaze and candied lemon wheels</div>
+                            <div class="cake-price">₹749</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/6.jpg')"></div>
+                            <div class="cake-name">Caramel Crunch</div>
+                            <div class="cake-description">Salted caramel cake with toffee bits and caramel drizzle</div>
+                            <div class="cake-price">₹849</div>
+                        </a>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/7.jpg')"></div>
+                            <div class="cake-name">Black Forest</div>
+                            <div class="cake-description">Traditional German cake with cherries, chocolate, and whipped cream</div>
+                            <div class="cake-price">₹899</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/8.jpg')"></div>
+                            <div class="cake-name">Tiramisu Tower</div>
+                            <div class="cake-description">Italian-inspired coffee-soaked layers with mascarpone cream</div>
+                            <div class="cake-price">₹949</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/9.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-slide">
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/10.jpg')"></div>
+                            <div class="cake-name">Coconut Paradise</div>
+                            <div class="cake-description">Tropical coconut cake with coconut flakes and pineapple filling</div>
+                            <div class="cake-price">₹779</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/11.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/12.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="carousel-slide">
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/13.jpg')"></div>
+                            <div class="cake-name">Coconut Paradise</div>
+                            <div class="cake-description">Tropical coconut cake with coconut flakes and pineapple filling</div>
+                            <div class="cake-price">₹779</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/14.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/15.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="carousel-slide">
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/16.jpg')"></div>
+                            <div class="cake-name">Coconut Paradise</div>
+                            <div class="cake-description">Tropical coconut cake with coconut flakes and pineapple filling</div>
+                            <div class="cake-price">₹779</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/17.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/18.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                    </div>
+
+                    <!-- Slide 7 -->
+                    <div class="carousel-slide">
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/19.jpg')"></div>
+                            <div class="cake-name">Coconut Paradise</div>
+                            <div class="cake-description">Tropical coconut cake with coconut flakes and pineapple filling</div>
+                            <div class="cake-price">₹779</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/20.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/21.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                    </div>
+
+                    <!-- Slide 8 -->
+                    <div class="carousel-slide">
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/22.jpg')"></div>
+                            <div class="cake-name">Coconut Paradise</div>
+                            <div class="cake-description">Tropical coconut cake with coconut flakes and pineapple filling</div>
+                            <div class="cake-price">₹779</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/23.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/24.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                    </div>
+
+                    <!-- Slide 9 -->
+                    <div class="carousel-slide">
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/25.jpg')"></div>
+                            <div class="cake-name">Coconut Paradise</div>
+                            <div class="cake-description">Tropical coconut cake with coconut flakes and pineapple filling</div>
+                            <div class="cake-price">₹779</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/26.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                        <a href="#" class="cake-card" onclick="openModal">
+                            <div class="cake-image" style="background-image: url('Images/Menu/27.jpg')"></div>
+                            <div class="cake-name">Cheesecake Supreme</div>
+                            <div class="cake-description">New York style cheesecake with berry compote and graham crust</div>
+                            <div class="cake-price">₹799</div>
+                        </a>
+                    </div>
+                </div>
+
+        <button class="carousel-nav prev" onclick="prevSlide()">‹</button>
+                <button class="carousel-nav next" onclick="nextSlide()">›</button>
+            </div>
+            
+            <div class="carousel-indicators">
+                <div class="indicator active" onclick="goToSlide(0)"></div>
+                <div class="indicator" onclick="goToSlide(1)"></div>
+                <div class="indicator" onclick="goToSlide(2)"></div>
+                <div class="indicator" onclick="goToSlide(3)"></div>
+                <div class="indicator" onclick="goToSlide(4)"></div>
+                <div class="indicator" onclick="goToSlide(5)"></div>
+                <div class="indicator" onclick="goToSlide(6)"></div>
+                <div class="indicator" onclick="goToSlide(7)"></div>
+                <div class="indicator" onclick="goToSlide(8)"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>Visit Our Bakery</h3>
+            <p>Experience the art of homemade baking with our premium ingredients and traditional recipes</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>123 Baker Street, Sweet Town</span>
+                </div>
+                <div class="contact-item">
+                    <span>📞</span>
+                    <span>+91 98765 43210</span>
+                </div>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>orders@spcakes.com</span>
+                </div>
+            </div>
+            
+            <p>&copy; 2025 SP Cakes. All rights reserved. Made with ❤️ and flour.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Video Carousel
+        let currentVideoSlide = 0;
+        const totalVideoSlides = 3;
+        
+        function updateVideoCarousel() {
+            const videoCarousel = document.getElementById('videoCarousel');
+            const videoIndicators = document.querySelectorAll('.video-section .indicator');
+            
+            videoCarousel.style.transform = `translateX(-${currentVideoSlide * 100}%)`;
+            
+            videoIndicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentVideoSlide);
+            });
+        }
+        
+        function nextVideoSlide() {
+            currentVideoSlide = (currentVideoSlide + 1) % totalVideoSlides;
+            updateVideoCarousel();
+        }
+        
+        function prevVideoSlide() {
+            currentVideoSlide = (currentVideoSlide - 1 + totalVideoSlides) % totalVideoSlides;
+            updateVideoCarousel();
+        }
+        
+        function goToVideoSlide(slideIndex) {
+            currentVideoSlide = slideIndex;
+            updateVideoCarousel();
+        }
+
+        // Menu Carousel
+        let currentSlide = 0;
+        const totalSlides = 9;
+        
+        function updateCarousel() {
+            const carousel = document.getElementById('carousel');
+            const indicators = document.querySelectorAll('.menu-section .indicator');
+            
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+        
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            updateCarousel();
+        }
+        
+        // Auto-advance video slides every 8 seconds
+        setInterval(nextVideoSlide, 8000);
+        
+        // Auto-advance menu slides every 6 seconds
+        setInterval(nextSlide, 6000);
+        
+        // Smooth scrolling for CTA button
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#videos').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        
+        // Add scroll animations
+        window.addEventListener('scroll', function() {
+            const cards = document.querySelectorAll('.cake-card');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const cardVisible = 150;
+                
+                if (cardTop < window.innerHeight - cardVisible) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        
+        // Initialize card animations
+        document.querySelectorAll('.cake-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(50px)';
+            card.style.transition = 'all 0.6s ease';
+        });
+
+        // Add navigation between sections
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroButton = document.querySelector('.cta-button');
+            heroButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('#videos').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
