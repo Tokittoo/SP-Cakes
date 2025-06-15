@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SP Cakes - Homemade Delights</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <section class="hero">
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Images/SP-Cakes.jpg" alt="SP Cakes">
+                <span>SP CAKES</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Products</a></li>
+                <li><a href="#videos">Our Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
         <div class="hero-content">
             <div class="logo">
                 <div class="logo">
@@ -16,63 +39,32 @@
                 </div>
             </div>
             <h1>SP CAKES</h1>
-            <p>Homemade Perfection</p>
-            <div class="social-icons" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
-                <a href="https://www.linkedin.com/in/r-krishna-prasath-a3b143349/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.github.com/crish-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/_tokitoooo_" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://TokitoKrishna.t.me" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-            <a href="#videos" class="cta-button">Explore Our Story</a>
+            <p>Fresh Tasty & Delicious</p>
+            <div class="social-container">
+        <h1 class="social-title"></h1>
+        <div class="social-icons">
+            
+            <a href="#" class="social-icon instagram" aria-label="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+            
+            
+            <a href="#" class="social-icon youtube" aria-label="YouTube">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+            </a>
+            
         </div>
-    </section>
-
-    <section class="video-section" id="videos">
-        <div class="container">
-            <h2 class="section-title">Our Baking Journey</h2>
-            
-            <div class="video-carousel-container">
-                <div class="video-carousel" id="videoCarousel">
-                    <div class="video-slide">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <h3 class="video-title">The Art of Cake Making</h3>
-                        
-                    </div>
-                    
-                    <div class="video-slide">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <h3 class="video-title">Behind the Scenes</h3>
-                      </div>
-                    
-                    <div class="video-slide">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/BQ0mxQXmLsk?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <h3 class="video-title">Customer Stories</h3>
-                        </div>
-                </div>
-                
-                <button class="carousel-nav prev" onclick="prevVideoSlide()">‹</button>
-                <button class="carousel-nav next" onclick="nextVideoSlide()">›</button>
-            </div>
-            
-            <div class="carousel-indicators">
-                <div class="indicator active" onclick="goToVideoSlide(0)"></div>
-                <div class="indicator" onclick="goToVideoSlide(1)"></div>
-                <div class="indicator" onclick="goToVideoSlide(2)"></div>
-            </div>
+    </div>
         </div>
     </section>
 
     <section class="menu-section" id="menu">
         <div class="container">
-            <h2 class="section-title">Our Signature Collection</h2>
+            <h2 class="section-title">Products</h2>
             <p class="section-subtitle">Handcrafted with love, baked to perfection</p>
             
             <div class="carousel-container">
@@ -82,17 +74,14 @@
                         <a href="#" class="cake-card" onclick="openModal">
                             <div class="cake-image" style="background-image: url('Images/Menu/1.jpg')"></div>
                             <div class="cake-name">Chocolate Fantasy</div>
-                            
                         </a>
                         <a href="#" class="cake-card" onclick="openModal">
                             <div class="cake-image" style="background-image: url('Images/Menu/2.jpg')"></div>
                             <div class="cake-name">Strawberry Delight</div>
-                            
                         </a>
                         <a href="#" class="cake-card" onclick="openModal">
                             <div class="cake-image" style="background-image: url('Images/Menu/3.jpg')"></div>
                             <div class="cake-name">Vanilla Dream</div>
-                            
                         </a>
                     </div>
 
@@ -101,17 +90,14 @@
                         <a href="#" class="cake-card" onclick="openModal">
                             <div class="cake-image" style="background-image: url('Images/Menu/4.jpg')"></div>
                             <div class="cake-name">Red Velvet Royal</div>
-                            
                         </a>
                         <a href="#" class="cake-card" onclick="openModal">
                             <div class="cake-image" style="background-image: url('Images/Menu/5.jpg')"></div>
                             <div class="cake-name">Lemon Bliss</div>
-                            
                         </a>
                         <a href="#" class="cake-card" onclick="openModal">
                             <div class="cake-image" style="background-image: url('Images/Menu/6.jpg')"></div>
                             <div class="cake-name">Caramel Crunch</div>
-                            
                         </a>
                     </div>
 
@@ -120,12 +106,10 @@
                         <a href="#" class="cake-card" onclick="openModal">
                             <div class="cake-image" style="background-image: url('Images/Menu/7.jpg')"></div>
                             <div class="cake-name">Black Forest</div>
-                            
                         </a>
                         <a href="#" class="cake-card" onclick="openModal">
                             <div class="cake-image" style="background-image: url('Images/Menu/8.jpg')"></div>
                             <div class="cake-name">Tiramisu Tower</div>
-                            
                         </a>
                         <a href="#" class="cake-card" onclick="openModal">
                             <div class="cake-image" style="background-image: url('Images/Menu/9.jpg')"></div>
@@ -268,33 +252,72 @@
         </div>
     </section>
 
-    <footer class="footer">
+        <section class="video-section" id="videos">
+        <div class="container">
+            <h2 class="section-title">Our Works</h2>
+            
+            <div class="video-carousel-container">
+                <div class="video-carousel" id="videoCarousel">
+                    <div class="video-slide">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/DN_R6AVDjq8?si=JzQX4OuwwPG-Mhis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="video-title">Mutta Mittai</h3>
+                        
+                    </div>
+                    
+                    <div class="video-slide">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/-K5-aHRYL1c?si=ImEFgqa3sr4BUJPv?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="video-title">Black Forest Cup and Jar Cake</h3>
+                      </div>
+                    
+                    <div class="video-slide">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/mjZXUKszyjc?si=544jLXWMe_7u_2-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="video-title">Choclate Truffle Cake</h3>
+                        </div>
+                </div>
+                
+                <button class="carousel-nav prev" onclick="prevVideoSlide()">‹</button>
+                <button class="carousel-nav next" onclick="nextVideoSlide()">›</button>
+            </div>
+            
+            <div class="carousel-indicators">
+                <div class="indicator active" onclick="goToVideoSlide(0)"></div>
+                <div class="indicator" onclick="goToVideoSlide(1)"></div>
+                <div class="indicator" onclick="goToVideoSlide(2)"></div>
+            </div>
+        </div>
+    </section>
+
+     <footer class="footer">
         <div class="container">
             <h3>Visit Our Bakery</h3>
             <p>Experience the art of homemade baking with our premium ingredients and traditional recipes</p>
             
             <div class="contact-info">
                 <div class="contact-item">
-                    <span>📍</span>
-                    <span>123 Baker Street, Sweet Town</span>
-                </div>
-                <div class="contact-item">
                     <span>📞</span>
-                    <span>+91 98765 43210</span>
+                    <span>+91 6379388566</span>
                 </div>
-                <div class="contact-item">
-                    <span>📧</span>
-                    <span>orders@spcakes.com</span>
-                </div>
+            </div>
+            
+            <div class="fssai-info">
+                <h4>FSSAI License</h4>
+                <p>License Number: 22424015000176</p>
             </div>
             
             <p>&copy; 2025 SP Cakes. All rights reserved. Made with ❤️ and flour.</p>
         </div>
     </footer>
 
+
     <script>
         // Video Carousel
-        let currentVideoSlide = 0;
+        let currentVideoSlide = 0;22424015000176
         const totalVideoSlides = 3;
         
         function updateVideoCarousel() {
